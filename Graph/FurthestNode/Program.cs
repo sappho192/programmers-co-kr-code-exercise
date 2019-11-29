@@ -111,6 +111,8 @@ namespace FurthestNode
                 graph[results[i, 1]].Neighbour.Add(results[i, 0]);
             }
 
+            // 경로를 직접 기록하며 찾아다니는 방법은 노드와 연결선이 많아질 수록
+            // 수행시간이 급격히 늘어남. 아까워서 남겨둠
             /*
             var connectedNode = new int[n + 1]; // 타 노드와의 거리 정보 담는 배열
             {
