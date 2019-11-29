@@ -97,6 +97,8 @@ namespace Ranking
                  => 3 노드에 4와 연결되어있다는 걸 기록
                  부호를 이용하면 승패여부 기록 가능
                 */
+
+                // 중복 경기결과 필터링
                 if (!graph[results[i, 0]].Neighbour.Contains(results[i, 1]))
                 {
                     graph[results[i, 0]].Neighbour.Add(results[i, 1]);
