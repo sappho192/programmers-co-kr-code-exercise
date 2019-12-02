@@ -151,7 +151,7 @@ namespace FurthestNode
                 List<int> list = new List<int>();
                 if (!rankDict.ContainsKey(i))
                 {
-                    continue;
+                    break;
                 }
                 foreach (var ranker in rankDict[i])
                 {
